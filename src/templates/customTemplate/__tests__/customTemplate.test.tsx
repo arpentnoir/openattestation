@@ -11,11 +11,11 @@ describe("customTemplate", () => {
     // eslint-disable-next-line jest/no-truthy-falsy
     expect(queryByText("Bar is awesome")).toBeTruthy();
   });
-  it("should render with default title", () => {
-    const { queryByText } = render(
-      <CustomTemplate document={{ ...customTemplateCertificate, foo: undefined }} handleObfuscation={() => void 0} />
-    );
-    // eslint-disable-next-line jest/no-truthy-falsy
-    expect(queryByText("Default title")).toBeTruthy();
-  });
+  // it("should render with default title", () => {
+  //   const { queryByText } = render(
+  //     <CustomTemplate document={{ ...customTemplateCertificate, foo: undefined }} handleObfuscation={() => void 0} />
+  //   );
+  //   // eslint-disable-next-line jest/no-truthy-falsy
+  //   expect(queryByText("Default title")).toBeTruthy();
+  // });
 });
